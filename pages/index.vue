@@ -2,7 +2,7 @@
   <section id="hero" class="grid grid-cols-1 lg:grid-cols-2 w-auto gap-16 h-full">
     <div class="h-full w-full flex flex-col justify-center gap-6 items-center lg:items-start">
       <p>{{ $t('HELLO') }}  &#128075;, {{ $t('MY_NAME_IS') }}</p>
-    <Typing :text="$t('SOFTWARE_ENGINEER')" class="text-6xl h-32 xl:h-auto w-full text-center lg:text-left"/>
+    <Typing :text="$t('SOFTWARE_ENGINEER')" class="px-4 lg:px-0 text-6xl h-32 xl:h-auto w-full text-center lg:text-left"/>
   <button class="btn btn-primary w-fit mt-6">Download CV</button>
     </div>
 <div class="flex justify-center items-center">
