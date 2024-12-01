@@ -5,18 +5,24 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@nuxt/content": "^2.13.4",
+    "@nuxt/eslint": "^0.7.2",
     "@nuxt/icon": "^1.8.2",
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/i18n": "^9.1.0",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "eventsource": "^2.0.2",
-    "nuxt": "^3.14.1592"
+    "nuxt": "^3.14.1592",
+    "vue3-toastify": "^0.2.5"
   },
   "devDependencies": {
-    "daisyui": "^4.12.14"
+    "@nuxt/eslint-config": "^0.7.2",
+    "daisyui": "^4.12.14",
+    "eslint": "^9.16.0"
   }
 }

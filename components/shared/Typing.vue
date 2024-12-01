@@ -1,13 +1,13 @@
 <template>
-    <p>
-      <span>{{ currentText }}</span>
-      <span class="blinking-cursor">|</span>
-    </p>
+  <p>
+    <span>{{ currentText }}</span>
+    <span class="blinking-cursor">|</span>
+  </p>
 </template>
 
 <script>
 export default {
-  name: "Typing",
+  name: 'Typing',
   props: {
     text: {
       type: String,
@@ -17,38 +17,39 @@ export default {
   },
   data() {
     return {
-      currentText: "", // Texto atual sendo exibido
+      currentText: '', // Texto atual sendo exibido
       isDeleting: false, // Indica se está apagando
       typingSpeed: 150, // Velocidade de digitação (ms)
       deletingSpeed: 100, // Velocidade de apagamento (ms)
       pauseBetween: 1500, // Pausa antes de apagar (ms)
-    };
+    }
+  },
+  mounted() {
+    this.typeEffect() // Inicia o efeito ao montar o componente
   },
   methods: {
     typeEffect() {
       if (!this.isDeleting) {
         // Adiciona caracteres
-        this.currentText = this.text.substring(0, this.currentText.length + 1);
+        this.currentText = this.text.substring(0, this.currentText.length + 1)
         if (this.currentText === this.text) {
-          setTimeout(() => (this.isDeleting = true), this.pauseBetween);
+          setTimeout(() => (this.isDeleting = true), this.pauseBetween)
         }
-      } else {
+      }
+      else {
         // Remove caracteres
-        this.currentText = this.text.substring(0, this.currentText.length - 1);
-        if (this.currentText === "") {
-          this.isDeleting = false;
+        this.currentText = this.text.substring(0, this.currentText.length - 1)
+        if (this.currentText === '') {
+          this.isDeleting = false
         }
       }
 
       // Define a velocidade do loop
-      const speed = this.isDeleting ? this.deletingSpeed : this.typingSpeed;
-      setTimeout(this.typeEffect, speed);
+      const speed = this.isDeleting ? this.deletingSpeed : this.typingSpeed
+      setTimeout(this.typeEffect, speed)
     },
   },
-  mounted() {
-    this.typeEffect(); // Inicia o efeito ao montar o componente
-  },
-};
+}
 </script>
 
 <style>

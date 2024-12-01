@@ -20,7 +20,7 @@
 <script setup>
 const { setLocale, locale } = useI18n()
 
-function changeLocale (locale) {
+function changeLocale(locale) {
   setLocale(locale)
 }
 </script>

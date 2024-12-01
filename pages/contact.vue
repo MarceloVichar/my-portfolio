@@ -1,7 +1,9 @@
 <template>
-  <Soon />
+  <div>
+    <ContactForm />
+  </div>
 </template>
 
 <script setup lang="ts">
-import Soon from "~/components/shared/Soon.vue";
+import ContactForm from '~/components/app/ContactForm.vue'
 </script>
