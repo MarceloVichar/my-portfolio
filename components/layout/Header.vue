@@ -1,48 +1,27 @@
 <template>
   <div
-    class="navbar bg-base-100 fixed justify-center transition-all duration-500 z-50"
+    class="navbar bg-base-100 fixed justify-center transition-all duration-500 z-10"
     :class="isTop ? 'lg:bg-opacity-0 lg:min-h-28' : 'lg:bg-opacity-0 lg:min-h-16 lg:backdrop-blur-md'"
   >
     <div class="w-full xl:w-[1280px]">
+      <div
+        class="btn btn-ghost lg:hidden"
+        @click="menuIsOpen = true"
+      >
+        <Icon
+          name="radix-icons:hamburger-menu"
+          class="text-3xl"
+        />
+      </div>
+
+      <transition name="fade-slide">
+        <MobileMenu
+          v-if="menuIsOpen"
+          :items="menuItems"
+          @close="menuIsOpen = false"
+        />
+      </transition>
       <div class="flex items-center">
-        <div class="dropdown">
-          <div
-            tabindex="0"
-            role="button"
-            class="btn btn-ghost lg:hidden"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-          >
-            <li
-              v-for="item in menuItems"
-              :key="item.route"
-            >
-              <NuxtLink
-                :class="{ active: route.path === localePath(item.route) }"
-                :to="localePath(item.route)"
-              >
-                {{ $t(item.label) }}
-              </NuxtLink>
-            </li>
-          </ul>
-        </div>
         <NuxtLink :to="localePath('/')">
           <img
             src="~/public/brand.png"
@@ -76,12 +55,14 @@
 
 <script setup>
 import LangSwitcher from '~/components/shared/LangSwitcher.vue'
+import MobileMenu from '~/components/layout/MobileMenu.vue'
 
 const route = useRoute()
 
 const localePath = useLocalePath()
 
 const isTop = ref(true)
+const menuIsOpen = ref(false)
 
 const handleScroll = () => {
   isTop.value = window.scrollY < 150
@@ -103,3 +84,26 @@ const menuItems = ref([
   { route: '/career', label: 'MY_CAREER' },
 ])
 </script>
+
+<style scoped>
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+  transition: all 0.8s ease;
+}
+
+.fade-slide-enter-from {
+  transform: translateX(-100%);
+}
+
+.fade-slide-enter-to {
+  transform: translateX(0);
+}
+
+.fade-slide-leave-from {
+  transform: translateX(0);
+}
+
+.fade-slide-leave-to {
+  transform: translateX(-100%);
+}
+</style>

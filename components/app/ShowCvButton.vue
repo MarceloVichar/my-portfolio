@@ -10,11 +10,6 @@
 <script setup>
 const { locale } = useI18n()
 
-onMounted(() => {
-  console.log('mounted')
-  console.log(locale.value)
-})
-
 const getFile = () => {
   const cvMapper = {
     en: 'MarceloVichar-en.pdf',
