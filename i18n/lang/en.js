@@ -20,4 +20,5 @@ export default defineI18nLocale(async () => ({
   OR_SEND_AN_EMAIL_TO: 'Or send an email to',
   MESSAGE_SENT: 'Message sent successfully!',
   UNABLE_TO_SEND_MESSAGE: 'Unable to send message. Please try again later.',
+  SHOW_CV: 'Show resume',
 }))

@@ -11,9 +11,7 @@
           :text="$t('SOFTWARE_ENGINEER')"
           class="px-4 lg:px-0 text-6xl h-32 xl:h-auto w-full text-center lg:text-left"
         />
-        <button class="btn btn-primary w-fit mt-6">
-          Download CV
-        </button>
+        <ShowCvButton />
       </div>
       <div class="flex justify-center items-center">
         <div class="h-72 w-72 overflow-hidden rounded-full">
@@ -32,6 +30,7 @@
 <script setup lang="ts">
 import Typing from '~/components/shared/Typing.vue'
 import ContactForm from '~/components/app/ContactForm.vue'
+import ShowCvButton from '~/components/app/ShowCvButton.vue'
 </script>
 
 <style>
