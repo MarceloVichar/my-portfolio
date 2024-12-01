@@ -9,6 +9,14 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
   ],
   devtools: { enabled: true },
+  app: {
+    head: {
+      title: 'Marcelo Vichar',
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+      ],
+    },
+  },
 
   content: {},
   runtimeConfig: {
