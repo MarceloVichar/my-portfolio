@@ -1,7 +1,7 @@
 <template>
   <div
     class="navbar bg-base-100 fixed justify-center transition-all duration-500 z-10"
-    :class="isTop ? 'lg:bg-opacity-0 lg:min-h-28' : 'lg:bg-opacity-0 lg:min-h-16 lg:backdrop-blur-md'"
+    :class="isTop ? 'lg:bg-opacity-0 lg:min-h-28' : 'lg:bg-opacity-50 lg:min-h-16 lg:backdrop-blur-md'"
   >
     <div class="w-full xl:w-[1280px]">
       <div

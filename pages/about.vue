@@ -1,9 +1,6 @@
 <template>
   <div class="flex flex-col gap-12">
-    <h1 class="text-5xl text-center border-b-4 border-primary mx-auto w-fit">
-      {{ $t('ABOUT_ME') }}
-    </h1>
-
+    <PageTitle :title="$t('ABOUT_ME')" />
     <CardDetails
       v-for="(card, i) in cards"
       :key="i"
@@ -19,6 +16,7 @@
 <script setup lang="ts">
 import CardDetails from '~/components/shared/CardDetails.vue'
 import ContactForm from '~/components/app/ContactForm.vue'
+import PageTitle from '~/components/shared/PageTitle.vue'
 
 const { t } = useI18n()
 

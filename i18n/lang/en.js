@@ -5,7 +5,7 @@ export default defineI18nLocale(async () => ({
   COPYRIGHT: 'Copyright © 2024 Marcelo Vichar - All rights reserved',
   HOME: 'Home',
   ABOUT_ME: 'About me',
-  MY_SKILLS: 'My skills',
+  MY_SKILLS: 'My stack',
   MY_CAREER: 'My career',
   CONTACT_ME: 'Contact me',
   SOON: 'Soon',
@@ -33,4 +33,12 @@ export default defineI18nLocale(async () => ({
   FOOTBALL_TEXT: 'When I am not working or studying, I am probably watching football. I am a Flamengo fan at heart, and following Flamengo\'s games is one of my greatest pleasures. For me, football goes beyond a sport; it is a passion that connects people, creates memories, and brings that unique adrenaline of cheering for the favorite team.',
   PERSONAL_VALUES: 'My Personal Values',
   PERSONAL_VALUES_TEXT_1: 'Dedication is the word that best defines me. From my first jobs to my current role as a developer, I always strive to give my best, learn, and contribute significantly. I believe in the value of teamwork and the power of collective effort to achieve great results.',
-  PERSONAL_VALUES_TEXT_2: 'Respect, commitment, and a constant pursuit of excellence are principles that guide my journey. Whether in a project, in a work environment, or in personal life, my goal is always to exceed expectations and leave a positive mark.' }))
+  PERSONAL_VALUES_TEXT_2: 'Respect, commitment, and a constant pursuit of excellence are principles that guide my journey. Whether in a project, in a work environment, or in personal life, my goal is always to exceed expectations and leave a positive mark.',
+  YEAR: 'year',
+  YEARS: 'years',
+  PROGRAMMING_LANGUAGES: 'Programming languages',
+  FRAMEWORKS: 'Frameworks',
+  DATA_BASE: 'Database',
+  INFRASTRUCTURE: 'Infrastructure',
+  TOOLS: 'Tools',
+}))
