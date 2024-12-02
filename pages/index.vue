@@ -15,11 +15,12 @@
       </div>
       <div class="flex justify-center items-center">
         <div class="h-72 w-72 overflow-hidden rounded-full">
-          <img
-            src="~/public/photo.jpeg"
+          <NuxtImg
+            format="webp"
+            src="/photo.jpeg"
             alt="photo"
             class="object-cover h-full w-full  zoom-effect"
-          >
+          />
         </div>
       </div>
     </section>

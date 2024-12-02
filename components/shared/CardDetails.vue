@@ -3,13 +3,14 @@
     class="flex flex-col-reverse lg:card-side bg-base-300 lg:bg-base-100 lg:hover:bg-base-300 transition duration-500 shadow-xl pb-4 lg:pb-0 rounded-xl"
     :class="inverted ? 'lg:flex-row-reverse' : 'lg:flex-row'"
   >
-    <img
+    <NuxtImg
+      format="webp"
       :src="imageSrc"
       :alt="title"
-      class="w-64 h-auto object-cover mx-auto"
+      class="flex-none w-64 h-auto object-cover mx-auto"
       :class="inverted ? 'lg:rounded-r-xl' : 'lg:rounded-l-xl'"
-    >
-    <div class="card-body p-4 gap-6">
+    />
+    <div class="grow card-body p-4 gap-6">
       <h2 class="card-title block text-center lg:text-left">
         {{ title }}
       </h2>
@@ -30,7 +31,7 @@ const props = defineProps({
     required: true,
   },
   content: {
-    type: [String || Array],
+    type: [String, Array],
     required: true,
   },
   imageSrc: {

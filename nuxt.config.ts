@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/icon',
     '@nuxt/eslint',
+    '@nuxtjs/seo',
   ],
   devtools: { enabled: true },
   app: {

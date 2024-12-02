@@ -22,6 +22,7 @@
       "
   >
     <NuxtImg
+      format="webp"
       :src="imageSrc"
       :alt="title"
       class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl"

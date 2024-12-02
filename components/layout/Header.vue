@@ -3,7 +3,7 @@
     class="navbar bg-base-100 fixed justify-center transition-all duration-500 z-10"
     :class="isTop ? 'lg:bg-opacity-0 lg:min-h-28' : 'lg:bg-opacity-50 lg:min-h-16 lg:backdrop-blur-md'"
   >
-    <div class="w-full xl:w-[1280px]">
+    <div class="w-full xl:w-[1280px] flex">
       <div
         class="btn btn-ghost lg:hidden"
         @click="menuIsOpen = true"
@@ -23,14 +23,14 @@
       </transition>
       <NuxtLink
         :to="localePath('/')"
-        class="w-full"
+        class="flex-none"
       >
         <h2 class="font-montserrat sm:text-2xl text-white">
           MARCELO VICHAR
         </h2>
       </NuxtLink>
 
-      <div class="flex justify-end gap-4">
+      <div class="grow flex justify-end gap-4">
         <div class="hidden lg:flex justify-end">
           <ul class="menu menu-horizontal px-1 gap-1">
             <li

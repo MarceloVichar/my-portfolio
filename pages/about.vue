@@ -4,8 +4,8 @@
     <CardDetails
       v-for="(card, i) in cards"
       :key="i"
-      :title="card.title"
-      :content="card.content"
+      :title="card.title || ''"
+      :content="card.content || ''"
       :image-src="card.imageSrc"
       :inverted="i % 2 === 0"
     />
