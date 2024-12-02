@@ -49,7 +49,7 @@
         :placeholder="$t('ENTER_YOUR_MESSAGE')"
       />
     </div>
-    <div class="flex justify-center">
+    <div class="flex justify-center mt-4">
       <button
         type="submit"
         :disabled="sendingEmail"

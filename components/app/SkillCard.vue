@@ -5,7 +5,7 @@
         aspect-square
         rounded-2xl
         p-2
-        lg:p-8
+        lg:p-4
         bg-white
         relative
         flex
@@ -15,7 +15,7 @@
         duration-500
         before:opacity-100
         lg:before:opacity-0
-        lg:hover:translate-y-5
+        lg:hover:translate-y-3
         lg:hover:before:opacity-100
         group
         cursor-pointer
@@ -33,7 +33,7 @@
         text-white
         opacity-100
         lg:opacity-0
-        lg:translate-y-7
+        lg:translate-y-4
         transition
         duration-500
         lg:group-hover:opacity-100
@@ -45,7 +45,7 @@
         gap-2
       "
     >
-      <h1 class="text-md lg:text-xl font-bold">
+      <h1 class="text-md font-bold">
         {{ title }}
       </h1>
       <p class="text-xs">

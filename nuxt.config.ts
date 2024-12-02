@@ -39,10 +39,10 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-
+    baseUrl: process.env.NUXT_BASE_URL || 'http://localhost:3000',
     locales: [
-      { code: 'pt', name: 'Português', iso: 'pt-BR', file: 'pt.js' },
-      { code: 'en', name: 'English', iso: 'en-US', file: 'en.js' },
+      { code: 'pt', language: 'pt-BR', name: 'Português', iso: 'pt-BR', file: 'pt.js' },
+      { code: 'en', language: 'en-US', name: 'English', iso: 'en-US', file: 'en.js' },
     ],
 
     compilation: {
