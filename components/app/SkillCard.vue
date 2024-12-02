@@ -61,6 +61,7 @@
           class="mask mask-star-2 bg-white"
           disabled
           :checked="rating === i"
+          :aria-label="`rating ${i} in ${title}`"
         >
       </div>
     </div>

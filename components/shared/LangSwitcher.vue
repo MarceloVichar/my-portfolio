@@ -3,6 +3,7 @@
     <button
       class="p-1 rounded-full flex justify-center items-center h-fit"
       :class="locale === 'pt' ? 'bg-white' : 'bg-none border-none'"
+      aria-label="Change language to Portuguese"
       @click.prevent="changeLocale('pt')"
     >
       <Icon name="emojione:flag-for-brazil" />
@@ -10,6 +11,7 @@
     <button
       class="p-1 rounded-full flex justify-center items-center h-fit"
       :class="locale === 'en' ? 'bg-white' : 'bg-none border-none'"
+      aria-label="Change language to English"
       @click.prevent="changeLocale('en')"
     >
       <Icon name="emojione:flag-for-united-states" />

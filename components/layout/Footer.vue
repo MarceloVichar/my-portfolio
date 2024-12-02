@@ -7,6 +7,7 @@
           :key="socialMedia.icon"
           :href="socialMedia.link"
           target="_blank"
+          :aria-label="socialMedia.icon"
         >
           <Icon
             :name="socialMedia.icon"

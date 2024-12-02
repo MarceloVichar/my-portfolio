@@ -169,10 +169,12 @@ import SkillsContainer from '~/components/app/SkillsContainer.vue'
 import PageTitle from '~/components/shared/PageTitle.vue'
 import ContactForm from '~/components/app/ContactForm.vue'
 
+const { t } = useI18n()
+
 useSeoMeta({
-  title: $t('MY_SKILLS'),
-  description: $t('MY_SKILLS'),
-  ogDescription: $t('MY_SKILLS'),
+  title: t('MY_SKILLS'),
+  description: t('MY_SKILLS'),
+  ogDescription: t('MY_SKILLS'),
 })
 </script>
 
