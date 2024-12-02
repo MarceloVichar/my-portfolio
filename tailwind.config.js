@@ -17,7 +17,8 @@ export default {
       {
         dark: {
           ...dark,
-          primary: '#00FFFF',
+          'primary': '#00FFFF',
+          'base-300': '#2A323C',
         },
       },
     ],

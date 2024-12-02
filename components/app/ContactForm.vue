@@ -1,6 +1,6 @@
 <template>
   <form
-    class="flex flex-col gap-4 max-w-3xl mx-auto p-4 bg-base-200 rounded shadow"
+    class="flex flex-col gap-4 max-w-3xl mx-auto p-4 bg-base-300 rounded shadow"
     @submit.prevent="submitForm"
   >
     <p class="text-center text-3xl">
