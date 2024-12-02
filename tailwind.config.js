@@ -9,6 +9,12 @@ export default {
     './pages/**/*.vue',
   ],
 
+  theme: {
+    fontFamily: {
+      montserrat: ['Montserrat', 'sans-serif'],
+    },
+  },
+
   plugins: [
     daisyui,
   ],

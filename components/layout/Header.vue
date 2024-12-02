@@ -21,17 +21,16 @@
           @close="menuIsOpen = false"
         />
       </transition>
-      <div class="flex items-center">
-        <NuxtLink :to="localePath('/')">
-          <img
-            src="~/public/brand.png"
-            alt="logo"
-            class="h-8 w-auto object-contain"
-          >
-        </NuxtLink>
-      </div>
+      <NuxtLink
+        :to="localePath('/')"
+        class="w-full"
+      >
+        <h2 class="font-montserrat sm:text-2xl text-white">
+          MARCELO VICHAR
+        </h2>
+      </NuxtLink>
 
-      <div class="w-full flex justify-end gap-4">
+      <div class="flex justify-end gap-4">
         <div class="hidden lg:flex justify-end">
           <ul class="menu menu-horizontal px-1 gap-1">
             <li

@@ -2,6 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  src: url("../fonts/Lato/Lato-Light.ttf");
+  font-family: "Lato";
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../fonts/Lato/Lato-LightItalic.ttf");
+  font-family: "Lato";
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../fonts/Lato/Lato-Bold.ttf");
+  font-family: "Lato";
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../fonts/Lato/Lato-Italic.ttf");
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  src: url("../fonts/Lato/Lato-BoldItalic.ttf");
+  font-family: "Lato";
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-style: italic;
+}
+
 @layer utilities {
     html {
         @apply box-border;
@@ -30,5 +86,5 @@
 
 html, body, #__nuxt {
     height: 100%;
-    font-family: "Montserrat Light", sans-serif;
+    font-family: "Lato", "Montserrat Light", sans-serif;
 }
