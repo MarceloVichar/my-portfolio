@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     public: {
       PROFESSIONAL_MAIL: process.env.NUXT_PROFESSIONAL_MAIL || '',
       WEB3FORMS_API_KEY: process.env.NUXT_WEB3FORMS_API_KEY || '',
+      NUXT_BASE_URL: process.env.NUXT_BASE_URL || 'http://localhost:3000',
     },
   },
 

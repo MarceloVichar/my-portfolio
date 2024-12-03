@@ -81,6 +81,7 @@ const menuItems = ref([
   { route: '/about', label: 'ABOUT_ME' },
   { route: '/skills', label: 'MY_SKILLS' },
   { route: '/career', label: 'MY_CAREER' },
+  { route: '/projects', label: 'PROJECTS' },
 ])
 </script>
 

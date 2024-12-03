@@ -32,6 +32,39 @@
 import Typing from '~/components/shared/Typing.vue'
 import ContactForm from '~/components/app/ContactForm.vue'
 import ShowCvButton from '~/components/app/ShowCvButton.vue'
+
+const { $config } = useNuxtApp()
+
+useHead({
+  title: 'Marcelo Vichar - Software Engineer',
+  meta: [
+    { name: 'description', content: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.' },
+    { name: 'keywords', content: 'Marcelo Vichar, Software Engineer, Cloud Computing, DevOps, Scalable Solutions' },
+    { name: 'author', content: 'Marcelo Vichar' },
+    { property: 'og:title', content: 'Marcelo Vichar - Software Engineer' },
+    { property: 'og:description', content: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.' },
+    { property: 'og:image', content: '/photo.jpeg' },
+    { property: 'og:url', content: $config.public?.NUXT_BASE_URL },
+    { name: 'twitter:card', content: 'marcelo_vichar' },
+    { name: 'twitter:title', content: 'Marcelo Vichar - Software Engineer' },
+    { name: 'twitter:description', content: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.' },
+    { name: 'twitter:image', content: '/photo.jpeg' },
+  ],
+})
+
+useSeoMeta({
+  title: 'Marcelo Vichar - Software Engineer',
+  description: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.',
+  author: 'Marcelo Vichar',
+  ogTitle: 'Marcelo Vichar - Software Engineer',
+  ogDescription: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.',
+  ogImage: '/photo.jpeg',
+  ogUrl: $config.public?.NUXT_BASE_URL,
+  twitterCard: 'marcelo_vichar',
+  twitterTitle: 'Marcelo Vichar - Software Engineer',
+  twitterDescription: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.',
+  twitterImage: '/photo.jpeg',
+})
 </script>
 
 <style>
