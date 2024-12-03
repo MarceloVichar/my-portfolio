@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/eslint',
     '@nuxtjs/seo',
+    'nuxt-gtag',
   ],
   devtools: { enabled: true },
   app: {
@@ -39,6 +40,11 @@ export default defineNuxtConfig({
     },
   },
 
+  gtag: {
+    enabled: process.env.NODE_ENV === 'production',
+    id: process.env.NUXT_GTAG_ID || '',
+  },
+
   i18n: {
     baseUrl: process.env.NUXT_BASE_URL || 'http://localhost:3000',
     locales: [
@@ -58,5 +64,4 @@ export default defineNuxtConfig({
       redirectOn: 'root',
     },
   },
-
 })

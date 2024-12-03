@@ -65,6 +65,38 @@
         image-src="/stack/frameworks/next.png"
       />
     </SkillsContainer>
+    <SkillsContainer :title="$t('SOFTWARE_ARCHITECTURE')">
+      <SkillCard
+        title="Clean Arch"
+        :rating="4"
+        :initial-year="2023"
+        image-src="/stack/arch/cleanarchitecture.png"
+      />
+      <SkillCard
+        title="DDD"
+        :rating="3"
+        :initial-year="2023"
+        image-src="/stack/arch/ddd.png"
+      />
+      <SkillCard
+        title="Hexagonal Architecture"
+        :rating="3"
+        :initial-year="2023"
+        image-src="/stack/arch/hexagonal.png"
+      />
+      <SkillCard
+        title="Microservices"
+        :rating="4"
+        :initial-year="2023"
+        image-src="/stack/arch/microservices.png"
+      />
+      <SkillCard
+        title="Micro frontends"
+        :rating="3"
+        :initial-year="2021"
+        image-src="/stack/arch/microfrontend.png"
+      />
+    </SkillsContainer>
     <SkillsContainer :title="$t('DATA_BASE')">
       <SkillCard
         title="Postgres"
@@ -79,14 +111,20 @@
         image-src="/stack/db/mysql.png"
       />
       <SkillCard
+        title="Redis"
+        :rating="4"
+        :initial-year="2022"
+        image-src="/stack/db/redis.png"
+      />
+      <SkillCard
         title="RDS"
-        :rating="5"
+        :rating="4"
         :initial-year="2023"
         image-src="/stack/db/rds.png"
       />
       <SkillCard
         title="Aurora"
-        :rating="5"
+        :rating="4"
         :initial-year="2023"
         image-src="/stack/db/aurora.jpg"
       />
