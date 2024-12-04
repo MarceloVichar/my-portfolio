@@ -1,6 +1,7 @@
 <template>
   <div class="flex flex-col gap-12">
     <PageTitle :title="$t('MY_SKILLS')" />
+    <PageIntro :text="$t('MY_SKILLS_INTRO')" />
     <SkillsContainer :title="$t('PROGRAMMING_LANGUAGES')">
       <SkillCard
         title="Javascript"
@@ -179,7 +180,7 @@
         image-src="/stack/tools/docker.png"
       />
       <SkillCard
-        title="Kubernets"
+        title="Kubernetes"
         :rating="2"
         :initial-year="2023"
         image-src="/stack/tools/k8s.png"
@@ -206,6 +207,27 @@ import SkillCard from '~/components/app/SkillCard.vue'
 import SkillsContainer from '~/components/app/SkillsContainer.vue'
 import PageTitle from '~/components/shared/PageTitle.vue'
 import ContactForm from '~/components/app/ContactForm.vue'
+import PageIntro from '~/components/shared/PageIntro.vue'
+
+const { $config } = useNuxtApp()
+
+useHead({
+  title: 'Marcelo Vichar - Software Engineer',
+})
+
+useSeoMeta({
+  title: 'Marcelo Vichar - Software Engineer',
+  description: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.',
+  author: 'Marcelo Vichar',
+  ogTitle: 'Marcelo Vichar - Software Engineer',
+  ogDescription: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.',
+  ogImage: '/photo.jpeg',
+  ogUrl: $config.public?.NUXT_BASE_URL,
+  twitterCard: 'marcelo_vichar',
+  twitterTitle: 'Marcelo Vichar - Software Engineer',
+  twitterDescription: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.',
+  twitterImage: '/photo.jpeg',
+})
 
 const { t } = useI18n()
 
@@ -215,19 +237,3 @@ useSeoMeta({
   ogDescription: t('MY_SKILLS'),
 })
 </script>
-
-<style>
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 2;
-  transition: 0.5s;
-}
-</style>

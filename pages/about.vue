@@ -1,6 +1,7 @@
 <template>
   <div class="flex flex-col gap-12">
     <PageTitle :title="$t('ABOUT_ME')" />
+    <PageIntro :text="$t('ABOUT_ME_INTRO')" />
     <CardDetails
       v-for="(card, i) in cards"
       :key="i"
@@ -17,6 +18,27 @@
 import CardDetails from '~/components/shared/CardDetails.vue'
 import ContactForm from '~/components/app/ContactForm.vue'
 import PageTitle from '~/components/shared/PageTitle.vue'
+import PageIntro from '~/components/shared/PageIntro.vue'
+
+const { $config } = useNuxtApp()
+
+useHead({
+  title: 'Marcelo Vichar - Software Engineer',
+})
+
+useSeoMeta({
+  title: 'Marcelo Vichar - Software Engineer',
+  description: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.',
+  author: 'Marcelo Vichar',
+  ogTitle: 'Marcelo Vichar - Software Engineer',
+  ogDescription: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.',
+  ogImage: '/photo.jpeg',
+  ogUrl: $config.public?.NUXT_BASE_URL,
+  twitterCard: 'marcelo_vichar',
+  twitterTitle: 'Marcelo Vichar - Software Engineer',
+  twitterDescription: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.',
+  twitterImage: '/photo.jpeg',
+})
 
 const { t } = useI18n()
 

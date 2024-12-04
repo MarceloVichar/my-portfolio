@@ -1,7 +1,7 @@
 <template>
   <div
     class="
-        card
+        skill-card
         aspect-square
         rounded-2xl
         p-2
@@ -95,7 +95,7 @@ const years = computed(() => {
 </script>
 
 <style>
-.card::before {
+.skill-card::before {
   content: "";
   position: absolute;
   top: 0;

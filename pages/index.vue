@@ -37,19 +37,6 @@ const { $config } = useNuxtApp()
 
 useHead({
   title: 'Marcelo Vichar - Software Engineer',
-  meta: [
-    { name: 'description', content: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.' },
-    { name: 'keywords', content: 'Marcelo Vichar, Software Engineer, Cloud Computing, DevOps, Scalable Solutions' },
-    { name: 'author', content: 'Marcelo Vichar' },
-    { property: 'og:title', content: 'Marcelo Vichar - Software Engineer' },
-    { property: 'og:description', content: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.' },
-    { property: 'og:image', content: '/photo.jpeg' },
-    { property: 'og:url', content: $config.public?.NUXT_BASE_URL },
-    { name: 'twitter:card', content: 'marcelo_vichar' },
-    { name: 'twitter:title', content: 'Marcelo Vichar - Software Engineer' },
-    { name: 'twitter:description', content: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.' },
-    { name: 'twitter:image', content: '/photo.jpeg' },
-  ],
 })
 
 useSeoMeta({
