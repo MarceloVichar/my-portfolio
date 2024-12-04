@@ -6,7 +6,7 @@
         rounded-2xl
         p-2
         lg:p-4
-        bg-white
+        bg-accent
         relative
         flex
         shadow-lg

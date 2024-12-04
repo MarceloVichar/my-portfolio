@@ -1,5 +1,5 @@
 import daisyui from 'daisyui'
-import { dark } from 'daisyui/src/theming/themes'
+import { dark, light } from 'daisyui/src/theming/themes'
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -25,6 +25,12 @@ export default {
           ...dark,
           'primary': '#00FFFF',
           'base-300': '#2A323C',
+          'accent': '#fff',
+        },
+        light: {
+          ...light,
+          primary: '#00FFFF',
+          accent: '#000',
         },
       },
     ],

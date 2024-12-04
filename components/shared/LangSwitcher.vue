@@ -2,7 +2,7 @@
   <div class="flex items-center gap-2">
     <button
       class="p-1 rounded-full flex justify-center items-center h-fit"
-      :class="locale === 'pt' ? 'bg-white' : 'bg-none border-none'"
+      :class="locale === 'pt' ? 'bg-accent' : 'bg-none border-none'"
       aria-label="Change language to Portuguese"
       @click.prevent="changeLocale('pt')"
     >
@@ -10,7 +10,7 @@
     </button>
     <button
       class="p-1 rounded-full flex justify-center items-center h-fit"
-      :class="locale === 'en' ? 'bg-white' : 'bg-none border-none'"
+      :class="locale === 'en' ? 'bg-accent' : 'bg-none border-none'"
       aria-label="Change language to English"
       @click.prevent="changeLocale('en')"
     >

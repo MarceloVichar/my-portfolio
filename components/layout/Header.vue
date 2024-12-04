@@ -25,7 +25,7 @@
         :to="localePath('/')"
         class="flex-none"
       >
-        <h2 class="font-montserrat sm:text-2xl text-white">
+        <h2 class="font-montserrat sm:text-2xl text-accent">
           MARCELO VICHAR
         </h2>
       </NuxtLink>
@@ -47,6 +47,7 @@
           </ul>
         </div>
         <LangSwitcher />
+        <ThemePicker />
       </div>
     </div>
   </div>
@@ -55,6 +56,7 @@
 <script setup>
 import LangSwitcher from '~/components/shared/LangSwitcher.vue'
 import MobileMenu from '~/components/layout/MobileMenu.vue'
+import ThemePicker from '~/components/shared/ThemePicker.vue'
 
 const route = useRoute()
 

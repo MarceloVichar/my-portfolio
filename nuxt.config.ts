@@ -9,8 +9,12 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxtjs/seo',
     'nuxt-gtag',
+    '@nuxtjs/color-mode',
   ],
+
+  ssr: false,
   devtools: { enabled: true },
+
   app: {
     head: {
       title: 'Marcelo Vichar',
@@ -18,6 +22,11 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       ],
     },
+  },
+
+  colorMode: {
+    preference: 'dark',
+    dataValue: 'theme',
   },
 
   content: {},
