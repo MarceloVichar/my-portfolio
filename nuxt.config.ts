@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     'nuxt-gtag',
     '@nuxtjs/color-mode',
+    '@nuxthub/core',
   ],
 
   devtools: {
