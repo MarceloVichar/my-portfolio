@@ -29,25 +29,12 @@ import PageTitle from '~/components/shared/PageTitle.vue'
 import ExperienceCard from '~/components/app/ExperienceCard.vue'
 import ContactForm from '~/components/app/ContactForm.vue'
 import PageIntro from '~/components/shared/PageIntro.vue'
+import { useDefaultSeoMeta } from '~/composables/helpers'
 
-const { $config } = useNuxtApp()
+useDefaultSeoMeta()
 
 useHead({
   title: 'Marcelo Vichar - Software Engineer',
-})
-
-useSeoMeta({
-  title: 'Marcelo Vichar - Software Engineer',
-  description: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.',
-  author: 'Marcelo Vichar',
-  ogTitle: 'Marcelo Vichar - Software Engineer',
-  ogDescription: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.',
-  ogImage: '/photo.jpeg',
-  ogUrl: $config.public?.NUXT_BASE_URL,
-  twitterCard: 'marcelo_vichar',
-  twitterTitle: 'Marcelo Vichar - Software Engineer',
-  twitterDescription: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.',
-  twitterImage: '/photo.jpeg',
 })
 
 const { t } = useI18n()
@@ -111,6 +98,15 @@ const academicExperiences = [
   },
 ]
 
+const certifications = [
+  {
+    title: t('AWS_CERT'),
+    institution: 'Amazon Web Services',
+    content: t('AWS_CERT_DESCRIPTION'),
+    imageSrc: '/carrer/aws.png',
+  },
+]
+
 const experiences = [
   {
     title: t('PROFESSIONAL_EXPERIENCE'),
@@ -119,6 +115,10 @@ const experiences = [
   {
     title: t('ACADEMIC_EXPERIENCE'),
     items: academicExperiences,
+  },
+  {
+    title: t('CERTIFICATIONS'),
+    items: certifications,
   },
 ]
 </script>

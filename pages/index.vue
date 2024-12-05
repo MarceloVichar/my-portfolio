@@ -32,25 +32,11 @@
 import Typing from '~/components/shared/Typing.vue'
 import ContactForm from '~/components/app/ContactForm.vue'
 import ShowCvButton from '~/components/app/ShowCvButton.vue'
+import { useDefaultSeoMeta } from '~/composables/helpers'
 
-const { $config } = useNuxtApp()
-
+useDefaultSeoMeta()
 useHead({
   title: 'Marcelo Vichar - Software Engineer',
-})
-
-useSeoMeta({
-  title: 'Marcelo Vichar - Software Engineer',
-  description: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.',
-  author: 'Marcelo Vichar',
-  ogTitle: 'Marcelo Vichar - Software Engineer',
-  ogDescription: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.',
-  ogImage: '/photo.jpeg',
-  ogUrl: $config.public?.NUXT_BASE_URL,
-  twitterCard: 'marcelo_vichar',
-  twitterTitle: 'Marcelo Vichar - Software Engineer',
-  twitterDescription: 'Marcelo Vichar, Software Engineer specializing in cloud computing, DevOps, Software Architecture, Full Stack and scalable solutions.',
-  twitterImage: '/photo.jpeg',
 })
 </script>
 
