@@ -1,8 +1,8 @@
 <template>
   <label class="swap swap-rotate">
     <input
+      id="theme-picker-input"
       type="checkbox"
-      :checked="isDark"
       @click="isDark ? colorMode.preference = 'light' : colorMode.preference = 'dark'"
     >
     <Icon
@@ -20,4 +20,11 @@
 const colorMode = useColorMode()
 
 const isDark = computed(() => colorMode.preference === 'dark')
+
+onMounted(() => {
+  const input = document.getElementById('theme-picker-input')
+  if (isDark.value) {
+    input.checked = true
+  }
+})
 </script>
