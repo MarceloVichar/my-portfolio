@@ -54,6 +54,7 @@ export default defineNuxtConfig({
 
   gtag: {
     id: process.env.NUXT_G_TAG || '',
+    loadingStrategy: 'async',
   },
 
   i18n: {
