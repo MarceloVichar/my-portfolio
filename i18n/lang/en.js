@@ -77,7 +77,7 @@ export default defineI18nLocale(async () => ({
   'ZRO_GATEWAY_TITLE': 'ZRO Pay - Payment Gateway',
   'ZRO_GATEWAY_DESCRIPTION': 'Zro Gateway was designed to serve large corporate customers, such as betting houses, shopping malls and e-commerce stores, offering a multi-bank payment gateway. The platform allows companies to carry out PIX operations flexibly, such as generating QR Codes and sending payments via API. My work covered both the development of the frontend, using Vue.js and Nuxt, and the backend, with PHP and Laravel, contributing to the creation of a robust and efficient solution.',
   'MY_WEBSITE_TITLE': 'This Website',
-  'MY_WEBSITE_DESCRIPTION': '',
+  'MY_WEBSITE_DESCRIPTION': 'This website is more than a portfolio; It is a showcase of what I believe and am capable of building. I developed the platform using Vue.js and Nuxt to ensure an agile and modern experience, with Tailwind CSS to create elegant and responsive styling. Additionally, I implemented i18n to support internationalization, making the site accessible to different languages and cultures. Every detail was designed to reflect my professional identity and my commitment to quality in development.',
   'CLAPME_TITLE': 'Clapme - Digital content development',
   'CLAPME_DESCRIPTION': 'Clapme offers a complete solution for its customers to sell tickets and broadcast live, including features such as real-time chat. I worked on the development of this application using React, contributing to the creation of an interactive and functional platform that connected event producers to their audiences in a dynamic and efficient way.',
   'VIEW_REPOSITORY': 'View repository',
