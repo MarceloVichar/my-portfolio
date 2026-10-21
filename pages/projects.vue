@@ -11,6 +11,7 @@
         :image-src="project.imageSrc"
         :dev-icons="project.devIcons"
         :repository="project.repository"
+        :website="project.website"
       />
     </div>
     <ContactForm class="w-full" />
@@ -32,6 +33,13 @@ useHead({
 })
 
 const projects = [
+  {
+    title: t('VARALZINHO_TITLE'),
+    description: t('VARALZINHO_DESCRIPTION'),
+    imageSrc: '/projects/varalzinho.png',
+    devIcons: ['js'],
+    website: 'https://listadeenxoval.pages.dev/',
+  },
   {
     title: t('LETSTUR_TITLE'),
     description: t('LETSTUR_DESCRIPTION'),

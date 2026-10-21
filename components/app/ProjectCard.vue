@@ -17,6 +17,15 @@
         <div class="text-sm">
           {{ description }}
         </div>
+        <a
+          v-if="website"
+          :href="website"
+          target="_blank"
+          class="btn btn-link btn-xs p-0 justify-start"
+        >
+          <Icon name="ri:global-line" />
+          {{ $t('VIEW_WEBSITE') }}
+        </a>
         <template v-if="repository">
           <a
             :href="repository"
@@ -70,6 +79,10 @@ defineProps({
     default: () => [],
   },
   repository: {
+    type: String,
+    default: '',
+  },
+  website: {
     type: String,
     default: '',
   },
